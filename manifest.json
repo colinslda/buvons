@@ -2,7 +2,7 @@
     "name": "Buvons.",
     "short_name": "Buvons",
     "description": "Suivez votre consommation d'eau quotidienne.",
-    "start_url": "/",
+    "start_url": "/buvons.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#3498db",
