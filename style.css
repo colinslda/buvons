@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fond noir anthracite */
+    color: #f0f0f0; /* Texte blanc cassé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1e1e1e; /* Conteneur légèrement plus clair que le fond */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Ombre plus marquée et douce */
+    width: 90%;
+    max-width: 600px; /* Légèrement plus large */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Transition pour un effet dynamique */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Léger effet de zoom au survol */
+}
+
+h1, h2 {
+    font-family: 'DM Sans', sans-serif;
+    color: #e0e0e0; /* Titres en blanc plus clair */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* Titre principal plus grand */
+    letter-spacing: -1px;
+}
+
+.input-section {
+    margin-bottom: 30px; /* Plus d'espace sous la section d'entrée */
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #d0d0d0; /* Label blanc grisé */
+    font-size: 1.1em;
+}
+
+.input-section input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #333; /* Bordure plus épaisse */
+    border-radius: 8px; /* Plus arrondi */
+    background-color: #252525; /* Fond du champ plus sombre */
+    color: #f0f0f0;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.input-section input[type="number"]:focus {
+    border-color: #a0f; /* Violet au focus */
+    outline: none; /* Supprime l'outline par défaut au focus */
+    box-shadow: 0 0 8px rgba(170, 0, 255, 0.5); /* Ombre violette au focus */
+}
+
+
+.input-section button, .reset-button {
+    background: linear-gradient(to right, #6a0dad, #a0f); /* Dégradé violet pour les boutons */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; /* Boutons très arrondis */
+    cursor: pointer;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transitions améliorées */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Ombre pour les boutons */
+}
+
+.input-section button:hover, .reset-button:hover {
+    background: linear-gradient(to right, #8e44ad, #c39bd3); /* Dégradé plus clair au hover */
+    transform: scale(1.05); /* Léger effet de grossissement au hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au hover */
+}
+
+.reset-button {
+    margin-top: 15px; /* Marge au-dessus du bouton reset */
+    background: linear-gradient(to right, #4a00e0, #8e2de2); /* Dégradé violet plus foncé pour reset */
+}
+
+.reset-button:hover {
+    background: linear-gradient(to right, #673ab7, #9575cd); /* Dégradé plus clair au hover pour reset */
+}
+
+
+.daily-summary {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #2a2a2a; /* Fond plus foncé pour le résumé */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre légère pour le résumé */
+}
+
+.daily-summary h2 {
+    margin-top: 0;
+    color: #d0d0d0; /* Titre du résumé en blanc grisé */
+    font-size: 1.6em;
+}
+
+#totalWater {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px; /* Marge sous le total */
+    color: #f0f0f0;
+}
+
+#waterLog {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+#waterLog li {
+    padding: 15px;
+    border-bottom: 1px solid #333; /* Ligne de séparation plus sombre */
+    background-color: #252525; /* Fond légèrement différent pour les logs */
+    border-radius: 6px; /* Coins légèrement arrondis pour chaque log */
+    margin-bottom: 8px; /* Marge entre les logs */
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Transition sur fond au hover */
+}
+
+#waterLog li:hover {
+    background-color: #333; /* Fond plus clair au hover */
+}
+
+#waterLog li:last-child {
+    border-bottom: none;
+}
