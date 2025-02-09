@@ -77,3 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
         waterLogList.innerHTML = ''; // Vide la liste des logs affichés
     }
 });
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+    });
+}
